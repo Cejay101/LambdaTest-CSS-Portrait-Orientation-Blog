@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  color: black;
+}
+header {
+  height: 100vh;
+}
+#header {
+  height: 50%;
+  background-color: rgb(228, 237, 247);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+nav p {
+  font-size: 18px;
+  font-family: "Fraunces", sans-serif;
+  border-bottom: #56bbc6 solid 3px;
+}
+#title {
+  text-align: center;
+}
+#title h1 {
+  font-family: "Fraunces", sans-serif;
+  max-width: 735px;
+  font-size: 60px;
+  margin: auto;
+}
+#title h1 span {
+  border-bottom: #56bbc6 solid 3px;
+}
+#title button {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  background-color: #56bbc6;
+  width: 150px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 18px;
+}
+#items {
+  height: 50vh;
+  width: 100%;
+}
+#items-group {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4rem;
+}
+.items-columns {
+  width: 28%;
+  align-content: center;
+  text-align: center;
+  background-color: #56bbc613;
+  padding: 20px 5px;
+  border-radius: 10px;
+}
+.items-columns :first-child {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  border: dotted 1px #0a6069;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items-columns h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.items-columns span {
+  font-family: "Manrope", sans-serif;
+  height: 128px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #222;
+}
+
+/* Media Queries */
+@media (max-height: 650px) {
+  #header {
+    height: 100vh;
+  }
+  #title button {
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, -20%);
+  }
+}
+@media (max-width: 1100px) {
+  #items-group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .items-columns {
+    width: 80%;
+  }
+  #title h1 {
+    font-size: 53px;
+  }
+}
+@media (max-width: 700px) {
+  #items-group {
+    gap: 2rem;
+  }
+  .items-columns {
+    width: 100%;
+  }
+  #title h1 {
+    font-size: 40px;
+    max-width: 400px;
+  }
+}
+@media (orientation: portrait) {
+  #items-group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+   .items-columns {
+    width: 100%;
+  }
+}
