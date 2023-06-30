@@ -97,7 +97,6 @@ nav p {
   text-align: center;
   color: #222;
 }
-
 /* Media Queries */
 @media (max-height: 650px) {
   #header {
