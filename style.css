@@ -47,11 +47,11 @@ nav p {
   font-weight: 700;
   font-size: 18px;
 }
-#items {
+#features {
   height: 50vh;
   width: 100%;
 }
-#items-group {
+#features-group {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -59,7 +59,7 @@ nav p {
   justify-content: space-evenly;
   padding: 4rem;
 }
-.items-columns {
+.feature {
   width: 28%;
   align-content: center;
   text-align: center;
@@ -67,7 +67,7 @@ nav p {
   padding: 20px 5px;
   border-radius: 10px;
 }
-.items-columns :first-child {
+.feature :first-child {
   font-family: "Fraunces", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -80,14 +80,14 @@ nav p {
   align-items: center;
   justify-content: center;
 }
-.items-columns h2 {
+.feature h2 {
   font-family: "Fraunces", sans-serif;
   font-size: 24px;
   line-height: 40px;
   text-align: center;
   margin-bottom: 18px;
 }
-.items-columns span {
+.feature span {
   font-family: "Manrope", sans-serif;
   height: 128px;
   font-style: normal;
@@ -105,39 +105,38 @@ nav p {
   #title button {
     bottom: 0%;
     right: 50%;
-    transform: translate(50%, -20%);
+    transform: translate(50%, 50%);
   }
 }
 @media screen and (max-width: 1100px) {
-  #items-group {
+  #features-group {
     flex-direction: column;
     gap: 2rem;
   }
-  .items-columns {
+
+  .feature {
     width: 80%;
   }
   #title h1 {
-    font-size: 53px;
-  }
-}
-@media screen and (max-width: 700px) {
-  #items-group {
-    gap: 2rem;
-  }
-  .items-columns {
-    width: 100%;
-  }
-  #title h1 {
-    font-size: 40px;
-    max-width: 400px;
+    font-size:60px;
   }
 }
 @media screen and (orientation: portrait) {
-  #items-group {
+  #title {
+    height: 60%;
+    display: flex;
+  }
+  #features-group {
     flex-direction: column;
     gap: 2rem;
   }
-  .items-columns {
+  .feature {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 700px) and (orientation:portrait) {
+  #title h1 {
+    font-size: 40px;
+  }
+} 
